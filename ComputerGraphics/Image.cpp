@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+п»ї#define _CRT_SECURE_NO_WARNINGS
 #define STB_IMAGE_IMPLEMENTATION
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 
@@ -42,7 +42,7 @@ Image::Image(const Image& image) {
 
 Image::Image(const string& path) : Image() {
 	if (!isRead(path)) {
-		throw runtime_error("Ошибка при чтении фотографии\n");
+		throw runtime_error("РћС€РёР±РєР° РїСЂРё С‡С‚РµРЅРёРё С„РѕС‚РѕРіСЂР°С„РёРё\n");
 	}
 }
 
@@ -78,7 +78,7 @@ vector<int> Image::getPixelColor(const int& col, const int& row) const {
 
 void Image::setPixelColor(const int& col, const int& row, vector<int> pixelColor) {
 	if (m_nChannels != pixelColor.size()) {
-		throw runtime_error("Размер вектора не соответствует количеству каналов\n");
+		throw runtime_error("Р Р°Р·РјРµСЂ РІРµРєС‚РѕСЂР° РЅРµ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓРµС‚ РєРѕР»РёС‡РµСЃС‚РІСѓ РєР°РЅР°Р»РѕРІ\n");
 
 		return;
 	}

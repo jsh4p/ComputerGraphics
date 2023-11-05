@@ -9,10 +9,10 @@ int main() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    Image* machine = new Image("machine.png");
-    EdgeDetector::LaplaceOperator(*machine).isSaved("Laplace.png");
-    EdgeDetector::RobertsOperator(*machine).isSaved("Roberts.png");
-    EdgeDetector::SobelOperator(*machine).isSaved("Sobel.png");
+    Image* machine = new Image("images/cat.png");
+    EdgeDetector::LaplaceOperator(*machine).isSaved("images/Laplace.png");
+    EdgeDetector::RobertsOperator(*machine).isSaved("images/Roberts.png");
+    EdgeDetector::SobelOperator(*machine).isSaved("images/Sobel.png");
 
 
     return 0;

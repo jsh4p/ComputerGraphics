@@ -40,10 +40,13 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="test.png">
+    <Image Include="images\test.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
-    <Image Include="machine.png">
+    <Image Include="images\machine.png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="images\cat.png">
       <Filter>Файлы ресурсов</Filter>
     </Image>
   </ItemGroup>
